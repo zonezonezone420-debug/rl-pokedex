@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --water: #5090d6;
+  --dragon: #0b6dc3;
+  --electric: #f4d23c;
+  --fairy: #ec8fe6;
+  --ghost: #5269ad;
+  --fire: #ff9d55;
+  --ice: #73cec0;
+  --grass: #63bc5a;
+  --bug: #91c12f;
+  --fighting: #ce416b;
+  --normal: #919aa2;
+  --dark: #5a5465;
+  --metal: #5a8ea2;
+  --stone: #c5b78c;
+  --psychic: #fa7179;
+  --earth: #d97845;
+  --poison: #b567ce;
+  --flying: #89aae3;
+  --inanimate: #dddddd;
+}
+
+body {
+  background: #f4f4f5;
+  color: #18181b;
+  font-family: ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding-bottom: 76px;
+}
+
+.type-bg-water { background: var(--water); }
+.type-bg-dragon { background: var(--dragon); }
+.type-bg-electric { background: var(--electric); }
+.type-bg-fairy { background: var(--fairy); }
+.type-bg-ghost { background: var(--ghost); }
+.type-bg-fire { background: var(--fire); }
+.type-bg-ice { background: var(--ice); }
+.type-bg-grass { background: var(--grass); }
+.type-bg-bug { background: var(--bug); }
+.type-bg-fighting { background: var(--fighting); }
+.type-bg-normal { background: var(--normal); }
+.type-bg-dark { background: var(--dark); }
+.type-bg-metal { background: var(--metal); }
+.type-bg-stone { background: var(--stone); }
+.type-bg-psychic { background: var(--psychic); }
+.type-bg-earth { background: var(--earth); }
+.type-bg-poison { background: var(--poison); }
+.type-bg-flying { background: var(--flying); }
+.type-bg-inanimate { background: var(--inanimate); }
+
+.type-soft-water { background: color-mix(in srgb, var(--water) 18%, white); }
+.type-soft-dragon { background: color-mix(in srgb, var(--dragon) 18%, white); }
+.type-soft-electric { background: color-mix(in srgb, var(--electric) 25%, white); }
+.type-soft-fairy { background: color-mix(in srgb, var(--fairy) 18%, white); }
+.type-soft-ghost { background: color-mix(in srgb, var(--ghost) 18%, white); }
+.type-soft-fire { background: color-mix(in srgb, var(--fire) 18%, white); }
+.type-soft-ice { background: color-mix(in srgb, var(--ice) 18%, white); }
+.type-soft-grass { background: color-mix(in srgb, var(--grass) 18%, white); }
+.type-soft-bug { background: color-mix(in srgb, var(--bug) 18%, white); }
+.type-soft-fighting { background: color-mix(in srgb, var(--fighting) 18%, white); }
+.type-soft-normal { background: color-mix(in srgb, var(--normal) 18%, white); }
+.type-soft-dark { background: color-mix(in srgb, var(--dark) 18%, white); }
+.type-soft-metal { background: color-mix(in srgb, var(--metal) 18%, white); }
+.type-soft-stone { background: color-mix(in srgb, var(--stone) 22%, white); }
+.type-soft-psychic { background: color-mix(in srgb, var(--psychic) 18%, white); }
+.type-soft-earth { background: color-mix(in srgb, var(--earth) 18%, white); }
+.type-soft-poison { background: color-mix(in srgb, var(--poison) 18%, white); }
+.type-soft-flying { background: color-mix(in srgb, var(--flying) 18%, white); }
+.type-soft-inanimate { background: color-mix(in srgb, var(--inanimate) 40%, white); }
+
+.stat-bar {
+  height: 10px;
+  border-radius: 9999px;
+  background: #e4e4e7;
+  overflow: hidden;
+}
+.stat-bar > div {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #e4383b, #ff9d55);
+}
+
+.dex-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.dex-card:active {
+  transform: scale(0.97);
+}
+
+.big-btn {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+  background: #e4383b;
+  box-shadow: 0 4px 0 #a3121a;
+}
+.big-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #a3121a;
+}
+.big-btn.secondary {
+  background: #3b82f6;
+  box-shadow: 0 4px 0 #1d4ed8;
+}
